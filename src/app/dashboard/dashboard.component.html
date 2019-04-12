@@ -1,4 +1,7 @@
 <h3>Top Heroes</h3>
+
+<div [ngClass]="{'red':num,'green':!num}">怎么办</div>
+<!-- <div [ngClass]="{1:'red',2:'green',3:'blue'}[stateNum]">怎么办</div> -->
 <div class="grid grid-pad">
   <a *ngFor="let hero of heroes" 
   routerLink="/detail/{{hero.id}}"

@@ -8,13 +8,14 @@ import { HeroService } from '../hero.service';
   styleUrls: ['./dashboard.component.less']
 })
 export class DashboardComponent implements OnInit {
-
-  heroes: Hero[] = []; 
+  name = 'de';
+  num = true;
+  stateNum = 3;
+  heroes: Hero[] = [];
   constructor(private heroService: HeroService) { }
   ngOnInit() {
     this.getHeroes();
-  } 
-  
+  }
   getHeroes(): void {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes.slice(1, 5));
