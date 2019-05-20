@@ -10,5 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my angular demo~';
+<<<<<<< HEAD
   myHero = 'Windstrom';
+=======
+  name = 'de';
+  test3 = 'desd';
+>>>>>>> ccb4ed4bb4136156ff48cb2f614356177a604dc6
 }
